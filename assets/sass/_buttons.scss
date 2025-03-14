@@ -1,0 +1,145 @@
+// === buttons css
+.btn {
+    --#{$prefix}btn-font-size: 1.8rem;
+    --#{$prefix}btn-padding-x: 2.4rem;
+    --#{$prefix}btn-padding-y: 1.3rem;
+    --#{$prefix}btn-font-family: "Nunito Sans", serif;
+    --#{$prefix}btn-font-weight: 400;
+    --#{$prefix}btn-line-height: 1.2;
+    --#{$prefix}btn-border-width: 0.1rem;
+    --#{$prefix}btn-border-radius: 1.2rem;
+
+    --#{$prefix}btn-hover-border-color: transparent;
+    --#{$prefix}btn-box-shadow: none;
+    --#{$prefix}btn-focus-box-shadow: none;
+
+    @include media-breakpoint-down(md) {
+        --#{$prefix}btn-padding-x: 1.85rem;
+        --#{$prefix}btn-padding-y: 1.2rem;
+    }
+}
+.btn-icon {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    @include media-breakpoint-down(md) { gap: 1rem; }
+}
+.video-btn {
+    --#{$prefix}btn-font-size: 1.6rem;
+    --#{$prefix}btn-padding-x: 1.4rem;
+    --#{$prefix}btn-padding-y: 1.1rem;
+}
+
+.btn-link-icon {
+    --#{$prefix}btn-padding-x: 0rem;
+    --#{$prefix}btn-padding-y: 0rem;
+    --#{$prefix}btn-border-width: 0rem;
+    --fa-secondary-opacity: 1;
+    --#{$prefix}btn-font-weight: 500;
+    --#{$prefix}btn-hover-color: var(--#{$prefix}primary);
+    --#{$prefix}btn-hover-bg: transparent;
+    color: var(--#{$prefix}body-color);
+    .fa-angle-right { font-size: 1.4rem; padding-left: 0.5rem; transition: transform 0.3s ease-in-out; }
+    &:hover {
+        .fa-angle-right {
+            transform: translateX(4px);
+        }
+    }
+}
+
+.btn-lg {
+    --#{$prefix}btn-font-size: 1.8rem;
+    --#{$prefix}btn-padding-x: 2.5rem;
+    --#{$prefix}btn-padding-y: 1.5rem;
+    @include media-breakpoint-down(md) {
+        --#{$prefix}btn-padding-x: 1.8rem;
+        --#{$prefix}btn-padding-y: 1.2rem;
+    }
+}
+
+.btn-md {
+    --bs-btn-font-size: 1.6rem;
+    --bs-btn-padding-x: 1.6rem;
+    --bs-btn-padding-y: 0.9rem;
+    @include media-breakpoint-down(md) {
+        --bs-btn-padding-x: 1.2rem;
+    }
+}
+.btn-sm {
+    --bs-btn-font-size: 1.6rem;
+    --bs-btn-padding-x: 1.6rem;
+    --bs-btn-padding-y: 0.642rem;
+    @include media-breakpoint-down(md) {
+        --bs-btn-padding-x: 1.2rem;
+    }
+}
+
+.btn-primary {
+    --#{$prefix}btn-bg: #BDFE6D;
+    --#{$prefix}btn-border-color: #BDFE6D;
+    --#{$prefix}btn-color: #050B00;
+    --#{$prefix}btn-hover-bg: #050B00;
+    --#{$prefix}btn-active-bg: #050B00;
+    --#{$prefix}btn-hover-color: #BDFE6D;
+    --#{$prefix}btn-active-color: #BDFE6D;
+    --#{$prefix}btn-hover-border-color: #BDFE6D;
+    --#{$prefix}btn-active-border-color: #BDFE6D;
+}
+
+.btn-outline-primary {
+    --#{$prefix}btn-bg: transparent;
+    --#{$prefix}btn-color: #FFFFFF;
+    --#{$prefix}btn-border-color: #BDFE6D;
+    --#{$prefix}btn-hover-bg: #BDFE6D;;
+    --#{$prefix}btn-active-bg: #BDFE6D;;
+    --#{$prefix}btn-hover-color: #050B00;
+    --#{$prefix}btn-active-color: #050B00;
+    --#{$prefix}btn-hover-border-color: #BDFE6D;
+    --#{$prefix}btn-active-border-color: #BDFE6D;
+}
+
+.btn-secondary {
+    --#{$prefix}btn-bg: var(--#{$prefix}secondary);
+    --#{$prefix}btn-color: #050B00;
+    --#{$prefix}btn-border-color: var(--#{$prefix}secondary);
+    --#{$prefix}btn-hover-color: var(--#{$prefix}body-color);
+    --#{$prefix}btn-active-color: var(--#{$prefix}body-color);
+    --#{$prefix}btn-hover-bg: #050B00;
+    --#{$prefix}btn-active-bg: #050B00;
+    --#{$prefix}btn-hover-border-color: var(--#{$prefix}secondary);
+    --#{$prefix}btn-active-border-color: var(--#{$prefix}secondary);
+}
+
+.btn-outline-secondary {
+    --#{$prefix}btn-bg: transparent;
+    --#{$prefix}btn-color: var(--#{$prefix}body-color);
+    --#{$prefix}btn-border-color: var(--#{$prefix}secondary);
+    --#{$prefix}btn-hover-color: #050B00;
+    --#{$prefix}btn-active-color: #050B00;
+    --#{$prefix}btn-hover-bg:var(--#{$prefix}secondary);
+    --#{$prefix}btn-active-bg:var(--#{$prefix}secondary);
+    --#{$prefix}btn-hover-border-color:var(--#{$prefix}secondary);
+    --#{$prefix}btn-active-border-color:var(--#{$prefix}secondary);
+}
+.btn-light {
+    --#{$prefix}btn-bg: #FFFFFF;
+    --#{$prefix}btn-color: #050B00;
+    --#{$prefix}btn-border-color: #FFFFFF;
+    --#{$prefix}btn-hover-bg: #BDFE6D;
+    --#{$prefix}btn-active-bg: #BDFE6D;
+    --#{$prefix}btn-hover-color: #050B00;
+    --#{$prefix}btn-active-color: #050B00;
+    --#{$prefix}btn-hover-border-color: #BDFE6D;
+    --#{$prefix}btn-active-border-color: #BDFE6D;
+}
+.btn-outline-light {
+    --#{$prefix}btn-bg: transparent;
+    --#{$prefix}btn-color: #FFFFFF;
+    --#{$prefix}btn-border-color: #FFFFFF;
+    --#{$prefix}btn-hover-bg: #FFFFFF;
+    --#{$prefix}btn-active-bg: #FFFFFF;
+    --#{$prefix}btn-hover-color: #050B00;
+    --#{$prefix}btn-active-color: #050B00;
+    --#{$prefix}btn-hover-border-color: #FFFFFF;
+    --#{$prefix}btn-active-border-color: #FFFFFF;
+}

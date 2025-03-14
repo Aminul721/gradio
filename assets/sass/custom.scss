@@ -1,0 +1,97 @@
+$prefix: bs-;
+// spacer
+$spacer: 0.5rem;
+$spacers: (
+    0: 0,
+    1: $spacer,
+    2: $spacer * 2,
+    3: $spacer * 3,
+    4: $spacer * 4,
+    5: $spacer * 5,
+    // custom
+    6: $spacer * 1.2,
+    8: $spacer * 1.6,
+    12: $spacer * 2.4,
+
+    24: $spacer * 4.8,
+    30: $spacer * 6,
+    32: $spacer * 6.4,
+    36: $spacer * 7.5,
+    40: $spacer * 8,
+    45: $spacer * 9,
+    50: $spacer * 10,
+    60: $spacer * 12,
+    65: $spacer * 13,
+    75: $spacer * 15,
+);
+// end spacers
+
+// Define the maximum width of `.container` for different screen sizes.
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+// container-max-widths
+$container-max-widths: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1260px
+);
+
+// font family
+// ==============Typography
+$font-weight-base: var(--#{$prefix}font-weight-base);
+$line-height-base: 1.7;
+$font-family-sans-serif: var(--#{$prefix}font-family-base);
+
+// headings
+$headings-font-weight: var(--#{$prefix}headings-font-weight);
+$headings-font-family: var(--#{$prefix}headings-font-family);
+$headings-line-height: var(--#{$prefix}headings-line-height);
+$headings-color: var(--#{$prefix}headings-color);
+// ==============Typography
+
+
+// ==============Font Sizes
+$font-size-base: 1.6rem; //16px
+
+$h1-font-size:                6.4rem; //64px
+$h2-font-size:                4.8rem; //48px
+$h3-font-size:                2.8rem; //28px
+$h4-font-size:                2.4rem; //24px
+$h5-font-size:                2rem; //20px
+$h6-font-size:                $font-size-base; //16px
+
+$small-font-size:             1.4rem;
+$lead-font-size:              $font-size-base * 1.1254;
+$lead-font-weight:            400;
+
+$display-font-sizes: (
+  1: 6.4rem, //64px
+  2: 6rem, //60px  
+  3: 5.6rem, // 56px
+  4: 5rem, // 50px
+  5: 4.2rem, // 42px
+  6: 3.2rem // 32px
+);
+$display-font-weight: var(--#{$prefix}display-font-weight);
+// ==============Font Sizes
+// z-index
+$zindex-levels: (
+    n1: -1,
+    0: 0,
+    1: 1,
+    2: 2,
+    3: 3,
+    5: 5,
+    6: 6
+  );
+$enable-negative-margins: true;
+$enable-important-utilities: false;

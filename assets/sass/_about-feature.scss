@@ -1,0 +1,24 @@
+// icon-design-about css
+.icon-design-about {
+    --icon-size: 72px;
+    --user-border-color: #FF81FF;
+    --user-bg-color-rgb: 160, 118, 249;
+    @include media-breakpoint-down(xl){
+        --icon-size: 60px;
+    }
+    &.icon-design-about,
+    &.icon-video-wrap { transform: none; }
+}
+
+.client-bg{
+    --gradio-size: contain;
+    --gradio-opacity: 0.1;
+}
+.client-logo {
+    transition: all 0.3s ease-in-out;
+    img { transition: all 0.3s ease-in-out; }
+    &:hover { 
+        border-color: var(--#{$prefix}primary);
+        img { transform: scale(1.1); }
+    }
+}

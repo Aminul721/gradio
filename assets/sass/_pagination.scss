@@ -1,0 +1,39 @@
+// pagination css
+.pagination-wrap {
+    --#{$prefix}pagination-color: #FFFFFF;
+    --#{$prefix}pagination-hover-bg: var(--#{$prefix}primary);
+}
+.pagination-custom {
+    --#{$prefix}pagination-padding-x: 1.65rem;
+    --#{$prefix}pagination-padding-y: 0.25rem;
+    --#{$prefix}pagination-font-size: 1.8rem;
+    --#{$prefix}pagination-color: #FFFFFF;
+    --#{$prefix}pagination-bg: var(--#{$prefix}dark-bg-subtle);
+    --#{$prefix}pagination-border-color: transparent;
+    --#{$prefix}pagination-border-radius: 1rem;
+    --#{$prefix}pagination-hover-color: #050B00;
+    --#{$prefix}pagination-hover-bg: var(--#{$prefix}primary);
+    --#{$prefix}pagination-hover-border-color: var(--#{$prefix}primary);
+    --#{$prefix}pagination-focus-color: none;
+    --#{$prefix}pagination-focus-bg: none;
+    --#{$prefix}pagination-focus-box-shadow: none;
+    --#{$prefix}pagination-active-color: #050B00;
+    --#{$prefix}pagination-active-bg: var(--#{$prefix}primary);
+    --#{$prefix}pagination-active-border-color: var(--#{$prefix}primary);
+    @include media-breakpoint-down(md) {
+        --#{$prefix}pagination-padding-x: 1rem;
+        --#{$prefix}pagination-padding-y: 0.12rem;
+    }
+}
+.page-item:not(:first-child) .page-link { margin-left: 0; }
+.pagination-icon {
+    color: var(--#{$prefix}pagination-color);
+    transition: all 0.15s ease-in-out;
+    &:hover {
+        color: var(--#{$prefix}primary);
+        background-color: var(--#{$prefix}pagination-bg);
+    }
+}
+.pagination-icon {
+    svg { @include media-breakpoint-down(md) { width: 38px; } }
+}

@@ -1,0 +1,42 @@
+// contact css
+.icon-size-contact {
+    --icon-size: 72px;
+    --offer-border-color: #9CFFAC;
+    --offer-bg-color-rgb: 156, 255, 172;
+    --tel-phone-border-color: #FF6A6A;
+    --tel-phone-bg-color-rgb: 255, 106, 106;
+    --envelop-border-color: #FD3A84;
+    --envelop-bg-color-rgb: 253, 58, 132;
+    --social-group-border-color: #A93AFF;
+    --social-group-bg-color-rgb: 169, 58, 255;
+
+    @include media-breakpoint-down(xl){ --icon-size: 60px; }
+    &.icon-offer-wrap {
+        border-color: var(--offer-border-color);
+        background-color: rgba(var(--offer-bg-color-rgb), 0.1);
+    }
+    &.icon-tel-phone-wrap {
+        border-color: var(--tel-phone-border-color);
+        background-color: rgba(var(--tel-phone-bg-color-rgb), 0.1);
+    }
+    &.icon-envelop-wrap {
+        border-color: var(--envelop-border-color);
+        background-color: rgba(var(--envelop-bg-color-rgb), 0.1);
+    }
+    &.icon-social-group-wrap {
+        border-color: var(--social-group-border-color);
+        background-color: rgba(var(--social-group-bg-color-rgb), 0.1);
+    }
+}
+.border-hover-style,
+.contact-details {
+    transition: all 0.25s ease-in-out;
+    &:hover { border-color: var(--#{$prefix}primary); }
+}
+.contact-details { height: 100%; }
+
+// .voltura-map {
+//     height: 460px;
+//     z-index: 1;
+//     @include media-breakpoint-down(md) { height: 380px; }
+// }

@@ -1,0 +1,53 @@
+//---------Form css---------
+.form-style {
+
+    --#{$prefix}form-input-padding-y: 1.5rem;
+    --#{$prefix}form-input-padding-x: 1.6rem;
+
+    --#{$prefix}input-font-family: var(--#{$prefix}font-family-base);
+
+    --#{$prefix}border-radius: 0.9rem;
+    --#{$prefix}input-focus-box-shadow: none;
+
+    --#{$prefix}form-check-input-checked-bg-color: var(--#{$prefix}primary);
+    --#{$prefix}form-check-input-checked-border-color: var(--#{$prefix}form-check-input-checked-bg-color);
+}
+.form-control {
+    padding: var(--#{$prefix}form-input-padding-y) var(--#{$prefix}form-input-padding-x);
+    color: rgba(var(--#{$prefix}body-color-rgb), 1);
+
+    &:is(:focus, :focus-visible) {
+        box-shadow: none;
+        border-color: transparent;
+        border-bottom-color: var(--#{$prefix}primary);
+        background-color: var(--#{$prefix}dark-bg-subtle);
+    }
+}
+textarea.form-control {
+    resize: none;
+    min-height: 138px;
+    @include media-breakpoint-down(lg){
+        min-height: 110px;
+    }
+}
+.form-control::-webkit-outer-spin-button,
+.form-control::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.form-control[type=number] { -moz-appearance:textfield; }
+.form-control::placeholder { color: rgba(var(--#{$prefix}light-white-rgb), 0.2); }
+.form-control::-webkit-input-placeholder { color: rgba(var(--#{$prefix}light-white-rgb), 0.2); }
+.form-control::-moz-placeholder { color: rgba(var(--#{$prefix}light-white-rgb), 0.2); }
+.form-control:-ms-input-placeholder { color: rgba(var(--#{$prefix}light-white-rgb), 0.2); }
+.form-control:-moz-placeholder { color: rgba(var(--#{$prefix}light-white-rgb), 0.2); }
+.form-select {
+    padding: var(--#{$prefix}form-input-padding-y) var(--#{$prefix}form-input-padding-x);
+    color: rgba(var(--#{$prefix}light-white-rgb), 0.2);
+    &:is(:focus, :focus-visible) { box-shadow: var(--#{$prefix}input-focus-box-shadow); }
+}
+.form-select::placeholder { color: rgba(var(--#{$prefix}light-white-rgb), 0.2); }
+.form-select::-webkit-input-placeholder { color: rgba(var(--#{$prefix}light-white-rgb), 0.2); }
+.form-select::-moz-placeholder { color: rgba(var(--#{$prefix}light-white-rgb), 0.2); }
+.form-select:-ms-input-placeholder { color: rgba(var(--#{$prefix}light-white-rgb), 0.2); }
+.form-select:-moz-placeholder { color: rgba(var(--#{$prefix}light-white-rgb), 0.2); }

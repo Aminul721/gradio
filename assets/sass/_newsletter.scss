@@ -1,0 +1,84 @@
+.icon-design-wrap {
+    --icon-size: 64px;
+    --user-border-color: #6E90FF;
+    --user-bg-color-rgb: 160, 118, 249;
+    --video-border-color: #6FC6FC;
+    --video-bg-color-rgb: 111, 198, 252;
+    --img-border-color: #FD3A84;
+    --img-bg-color-rgb: 253, 58, 132;
+    --blueprint-border-color: #FF81FF;
+    --blueprint-bg-color-rgb: 255, 129, 255;
+    --flvd-border-color: #FFA68D;
+    --flvd-bg-color-rgb: 255, 166, 141;
+    --clock-border-color: #9CFFAC;
+    --clock-bg-color-rgb: 156, 255, 172;
+
+    width: var(--icon-size);
+    min-width: var(--icon-size);
+    height: var(--icon-size);
+    top: 15vh;
+    left: 1vw;
+    transition: all 0.12s ease-in-out;
+    img { @include media-breakpoint-down(xl){ width: 34px; } }
+    @include media-breakpoint-down(xl){
+        --icon-size: 60px;
+        top: 5vh;
+        left: 1vw;
+    }
+    
+    &.icon-user-wrap {
+        top: 15vh;
+        left: 1vw;
+        border-color: var(--user-border-color);
+        background-color: rgba(var(--user-bg-color-rgb), 0.1);
+        @include media-breakpoint-down(xl){
+            top: 5vh;
+            left: 1vw;
+        }
+    }
+    &.icon-video-wrap {
+        top: 50%;
+        transform: translateY(-50%);
+        left: 9.8vw;
+        border-color: var(--video-border-color);
+        background-color: rgba(var(--video-bg-color-rgb), 0.1);
+        @include media-breakpoint-down(xl){ left: 4.6vw; }
+    }
+    &.icon-images-wrap {
+        top: initial;
+        bottom: 15vh;
+        left: 0;
+        border-color: var(--img-border-color);
+        background-color: rgba(var(--img-bg-color-rgb), 0.1);
+        @include media-breakpoint-down(xl){ bottom: 5vh; }
+    }
+    &.icon-blueprint-wrap {
+        top: 7vh;
+        left: initial;
+        right: 2.1vw;
+        border-color: var(--blueprint-border-color);
+        background-color: rgba(var(--blueprint-bg-color-rgb), 0.1);
+        @include media-breakpoint-down(xl){
+            top: 5vh;
+            right: 1.2vw;
+        }
+    }
+    &.icon-filevideo-wrap {
+        top: 50%;
+        transform: translateY(-52%);
+        right: 8.7vw;
+        left: initial;
+        border-color: var(--flvd-border-color);
+        background-color: rgba(var(--flvd-bg-color-rgb), 0.1);
+        @include media-breakpoint-down(xl){ right: 3.7vw; }
+    }
+    &.icon-clock-wrap {
+        top: initial;
+        bottom: 19vh;
+        right: 0.5vw;
+        left: initial;
+        border-color: var(--clock-border-color);
+        background-color: rgba(var(--clock-bg-color-rgb), 0.1);
+        @include media-breakpoint-down(xl){ bottom: 4vh; }
+    }
+}

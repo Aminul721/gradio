@@ -1,0 +1,178 @@
+// card-post css
+.card-gradient {
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        z-index: -1;
+        background-image: linear-gradient(90deg, rgba(133,255,189,1) 0%, rgba(255,251,125,1) 100%);
+    }
+}
+.card-award,
+.card-team,
+.card-service-blog,
+.card-about-feature,
+.card-services,
+.card-portfolio,
+.card-project,
+.card-post,
+.card-success,
+.card-post2,
+.card-recent-post {
+    --#{$prefix}card-spacer-y: 3.2rem;
+    --#{$prefix}card-spacer-x: 0;
+    --#{$prefix}card-title-spacer-y: 0;
+    --#{$prefix}card-title-color: #fff;
+    --#{$prefix}card-subtitle-color: #fff;
+    --#{$prefix}card-border-radius: 1.6rem;
+    --#{$prefix}card-box-shadow: none;
+    --#{$prefix}card-inner-border-radius: 0;
+    --#{$prefix}card-color: #fff;
+    --#{$prefix}card-bg: #0A1103;
+    transition: all 0.25s ease-in-out;
+    &:hover {
+        // border-width: 2px;
+        // border-bottom-color: var(--#{$prefix}primary);
+        box-shadow: 0px 2px 0px 0px var(--#{$prefix}primary);
+
+        backdrop-filter: blur(55px);
+        .card-title {
+            color: var(--#{$prefix}primary);
+            -webkit-text-fill-color: var(--#{$prefix}primary);
+            text-fill-color: var(--#{$prefix}primary);
+            a { color: var(--#{$prefix}primary); }
+        }
+    }
+    @include media-breakpoint-down(lg) { --#{$prefix}card-spacer-y: 2.2rem; }
+}
+.card-post2 {
+    --#{$prefix}card-spacer-x: 4.2rem;
+    --#{$prefix}card-spacer-y: 1rem;
+    @include media-breakpoint-down(xl) { --#{$prefix}card-spacer-x: 3.2rem; }
+    @include media-breakpoint-down(lg) {
+        --#{$prefix}card-spacer-x: 0;
+        --#{$prefix}card-spacer-y: 2.2rem;
+    }
+}
+.card-recent-post { --#{$prefix}card-border-color: transparent; }
+
+.card-about-feature {
+    --#{$prefix}card-spacer-y: 2.4rem;
+    --#{$prefix}card-spacer-x: 2.4rem;
+    --#{$prefix}card-border-color: rgba(252, 253, 242, 0.05);
+    --#{$prefix}card-bg: #0A1103;
+    @include media-breakpoint-down(lg) { --#{$prefix}card-spacer-y: 2.1rem; }
+    p { &:last-of-type { margin-bottom: 0; }}
+}
+.card-service-blog {
+    --#{$prefix}card-spacer-y: 3.2rem;
+    --#{$prefix}card-spacer-x: 0;
+    --#{$prefix}card-title-spacer-y: 0.8rem;
+    --#{$prefix}card-border-color: var(--#{$prefix}border-color);
+    --#{$prefix}card-bg: #050B00;
+    backdrop-filter: blur(36px);
+    @include media-breakpoint-down(lg) { --#{$prefix}card-spacer-y: 2.2rem; }
+}
+.card-team {
+    --#{$prefix}card-spacer-y: 1.6rem;
+    --#{$prefix}card-spacer-x: 0;
+    --#{$prefix}card-title-spacer-y: 0.8rem;
+    --#{$prefix}card-border-color: var(--#{$prefix}border-color);
+    --#{$prefix}card-bg: #050B00;
+    backdrop-filter: blur(36px);
+    &:hover { 
+        box-shadow: none;
+        border-color: rgba(var(--#{$prefix}primary-rgb), 0.5);
+        .designation-text { 
+            padding-left: calc(var(--des-circle-size) + 8px); 
+            &::before { left: 0; opacity: 1; visibility: visible; }
+        } 
+    }
+}
+.designation-text {
+    --des-circle-size: 8px;
+    transition: all 0.3s ease-in-out;
+    &::before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: var(--des-circle-size);
+        height: var(--des-circle-size);
+        border-radius: 50%;
+        left: 3px;
+        top: 0;
+        bottom: 1px;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-color: var(--#{$prefix}primary);
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: visible;
+    }
+}
+.card-award {
+    --award-img-width: 150px;
+    --award-date-color: var(--#{$prefix}extra-color);
+    --#{$prefix}card-spacer-y: 0;
+    --#{$prefix}card-spacer-x: 0;
+    --#{$prefix}card-border-color: var(--#{$prefix}border-color);
+    --#{$prefix}card-bg: #0A1103;
+    &:hover { border-color: transparent; }
+    @include media-breakpoint-down(lg){ --award-img-width: 115px; }
+    @include media-breakpoint-down(sm){ --award-img-width: 75px; }
+}
+.award-item {
+    & + .award-item {
+        margin-top: 24px;
+        @include media-breakpoint-down(lg){ margin-top: 16px; }
+    }
+}
+.award-date-text { color: var(--award-date-color);}
+.award-text-box { width: calc(100% - var(--award-img-width) / 1); }
+.award-img-box {
+    width: var(--award-img-width);
+    min-width: var(--award-img-width);
+}
+
+.card-portfolio {
+    --#{$prefix}card-spacer-y: 3.6rem;
+    --#{$prefix}card-spacer-x: 3.2rem;
+    --#{$prefix}card-title-spacer-y: 1.2rem;
+    --#{$prefix}card-title-color: #fff;
+    --#{$prefix}card-subtitle-color: #fff;
+    --#{$prefix}card-border-color: rgba(252, 253, 242, 0.05);
+    --#{$prefix}card-border-radius: 1.6rem;
+    --#{$prefix}card-box-shadow: none;
+    --#{$prefix}card-inner-border-radius: 0;
+    --#{$prefix}card-color: #fff;
+    --#{$prefix}card-bg: #0A1103;
+    transition: all 0.25s ease-in-out;
+}
+
+.card-calendar-icon { position: relative; top: -1px; }
+.blog-details-content {
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+    @include media-breakpoint-down(md) {
+        padding-left: 3.3vw;
+        padding-right: 3.3vw;
+    }
+}
+.card-project {
+    --#{$prefix}card-spacer-y: 0;
+    --#{$prefix}card-spacer-x: 0;
+    --#{$prefix}card-title-spacer-y: 0;
+    --#{$prefix}card-border-radius: 0;
+    --#{$prefix}card-border-color: transparent;
+    --#{$prefix}card-bg: transparent;
+    &:hover { box-shadow: none; }
+}
+.card-success {
+    --#{$prefix}card-spacer-y: 2.4rem;
+    --#{$prefix}card-spacer-x: 0;
+    --#{$prefix}card-title-spacer-y: 0;
+    &:hover { --#{$prefix}card-border-color: transparent; }
+}

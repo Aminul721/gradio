@@ -1,0 +1,9 @@
+// about css
+.about-video-img {
+    @include media-breakpoint-down(md){ height: 252px; }
+}
+
+// section-about-intro
+.about-intro-heading {
+    @include media-breakpoint-up(lg) { padding-left: 88px;}
+}

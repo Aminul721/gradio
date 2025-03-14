@@ -1,0 +1,96 @@
+// not-found css
+.section-404-hero {
+    @include media-breakpoint-down(xl){
+        padding-bottom: 140px;
+    }
+}
+.underconstruction-text {
+    top: 4rem;
+    transform: rotate(-15deg);
+    animation: jumping2 5s linear infinite;
+    @include media-breakpoint-down(sm){ top: 2.1rem;}
+}
+.error-text {
+    top: 9.5rem;
+    transform: rotate(15deg);
+    animation: jumping1 3s linear infinite;
+    @include media-breakpoint-down(sm){ top: 7.1rem;}
+}
+.start-top {
+    -webkit-animation: spinPlusIconFroward 7s linear 0s infinite;
+    animation: spinPlusIconFroward 7s linear 0s infinite;
+}
+.start-bottom {
+    -webkit-animation: spinPlusIconRevers 7s linear 0s infinite;
+    animation: spinPlusIconRevers 7s linear 0s infinite;
+}
+@keyframes spinPlusIconFroward {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spinPlusIconRevers {
+    0% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
+@keyframes jumping1 {
+    0% {
+        transform: rotate(0);
+        transform-origin: left top;
+    }
+    40% {
+        transform: rotate(15deg);
+        transform-origin: left bottom;
+    }
+    100% {
+        transform: translateY(0);
+        transform-origin: left top;
+    }
+}
+@keyframes jumping2 {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: right bottom;
+    }
+    40% {
+        transform: rotate(-8deg);
+        transform-origin: right top;
+    }
+    100% {
+        transform: translateY(0);
+        transform-origin: right bottom;
+    }
+}
+@keyframes jumping3 {
+    0% {
+        transform: rotate(0);
+        transform-origin: left top;
+    }
+    40% {
+        transform: rotate(-15deg);
+        transform-origin: left bottom;
+    }
+    100% {
+        transform: translateY(0);
+        transform-origin: left top;
+    }
+}
+
+// marquee-404 css
+.marquee-404 {
+    bottom: 20%;
+    @include media-breakpoint-down(xxl){ bottom: 26.5%; }
+    @include media-breakpoint-down(xl){ bottom: 36%; }
+    @include media-breakpoint-down(lg) { bottom: 0; }
+}

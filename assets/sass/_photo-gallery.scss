@@ -1,0 +1,10 @@
+// section-photo-gallery css
+.photo-gallery-item {
+    cursor: pointer;
+    & > img { filter: grayscale(1); transition: all 0.3s ease-in-out; }
+}
+.photo-marquee {
+    left: -70px;
+    top: 50px;
+    @include media-breakpoint-down(sm){ transform: rotate(0); bottom: 0; top: initial;}
+}

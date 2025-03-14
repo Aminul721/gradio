@@ -1,0 +1,53 @@
+.preset-input { padding: 0.25rem 0.5rem; }
+#customizer-form .number { width: 100px; }
+
+#customizer-form textarea {
+  font-size: 10px;
+  min-height: 120px;
+}
+#customizer-form .cursor-pointer {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: var(--bg-color, var(--bs-primary));
+  color: #0A1103;
+  padding: 2px 5px;
+  min-width: 55px;
+}
+#customizer-form .cursor-pointer.rounded {
+  --bs-border-radius: 12px;
+}
+#customizer-form .cursor-pointer.default {
+  --bg-color: linear-gradient( to right, #BDFE6D 0%,#BDFE6D 50%, #CAC6D6 50%, #CAC6D6 100% );
+}
+#customizer-form .cursor-pointer.preset1 {
+  --bg-color: linear-gradient( to right, #265201 0%, #265201 50%, #FAF7F0 50%, #FAF7F0 100% );
+}
+#customizer-form .cursor-pointer.preset2 {
+  --bg-color: linear-gradient( to right, #92f519 0%, #92f519 50%, #4C4D49 50%, #4C4D49 100% );
+}
+#customizer-form .cursor-pointer.preset3 {
+  --bg-color: linear-gradient( to right, #D0D5DD 0%, #D0D5DD 50%, #FBFAF8 50%, #FBFAF8 100% );
+}
+
+#customizer-form .color-presets > span {
+  text-indent: -99999px;
+  border: 1px solid #000;
+}
+.gear-icon svg { fill: currentColor; }
+.color-swatch-offcanvas {
+  --bs-offcanvas-padding-x: 1rem;
+  --bs-offcanvas-padding-y: 1rem;
+}
+.color-accordion {
+  --bs-accordion-active-color : var(--bs-body-color);
+  --bs-accordion-inner-border-radius: 0;
+}
+.color-accordion .accordion-item:first-of-type > .accordion-header .accordion-button,
+.color-accordion .accordion-button,
+.color-accordion .accordion-button:focus {
+  box-shadow: none;
+  border-radius: 0;
+}

@@ -1,0 +1,21 @@
+.portfolio-content-item {
+    & +.portfolio-content-item {
+        margin-top: 3.2rem;
+        @include media-breakpoint-down(lg) { margin-top: 2.5rem; }
+    }
+    p { &:last-of-type { margin-bottom: 0; } }
+
+    &.portfolio-img-wrapper,
+    &.portfolio-video-wrapper {
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+        @include media-breakpoint-down(lg) {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+    }
+    &.portfolio-video-wrapper { margin-bottom: 0; }
+}
+.portfolio-video-img {
+    @include media-breakpoint-down(md){ height: 252px; }
+}

@@ -1,0 +1,7 @@
+// privacy and terms css
+.privacy-item,
+.terms-condition-item {
+    p {
+        &:last-of-type{ margin-bottom: 0; }
+    }
+}

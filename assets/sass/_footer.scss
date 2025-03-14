@@ -1,0 +1,21 @@
+// footer css
+.social-link-wrap {
+    li {
+        a {
+            svg { transition: all 0.15s ease-in-out; }
+            &:hover { svg { transform: scale(1.1); } }
+        }
+    }
+}
+.footer-menu-list {
+    li {
+        & + li { margin-top: 0.82rem; }
+    }
+}
+
+// copyright
+.copyright-text {
+    color: rgba(var(--#{$prefix}secondary-text-emphasis-rgb), 0.4);
+    transition: all 0.15s  ease-in-out;
+    a { &:hover { color: var(--#{$prefix}primary); } }
+}

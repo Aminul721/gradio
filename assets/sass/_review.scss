@@ -1,0 +1,13 @@
+// section-review css
+.author-wrap { --author-size: 64px; }
+.author-img {
+    width: var(--author-size);
+    min-width: var(--author-size);
+    height: var(--author-size);
+}
+.author-details {
+    p {
+        color: var(--#{$prefix}extra-color);
+        &:last-of-type { margin-bottom: 0; } 
+    }
+}

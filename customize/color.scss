@@ -1,0 +1,52 @@
+@import "../assets/scss/custom";
+
+// scss-docs-start import-stack
+// Configuration
+@import "../assets/bootstrap/scss/functions";
+@import "../assets/bootstrap/scss/variables";
+@import "../assets/bootstrap/scss/variables-dark";
+@import "../assets/bootstrap/scss/maps";
+@import "../assets/bootstrap/scss/mixins";
+@import "../assets/bootstrap/scss/utilities";
+.preset-input { padding: 0.25rem 0.5rem; }
+#customizer-form{
+    .number{
+        width: 100px;
+    }
+    textarea{
+        font-size: 10px;
+        min-height: 120px;
+    }
+
+    .cursor-pointer{
+        cursor: pointer;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background: var(--bg-color, var(--bs-primary));
+        color: #fff;
+        padding: 2px 5px;       
+        min-width: 55px;
+        &.rounded{
+            --bs-border-radius: 12px;
+        }
+        &.default{
+            --bg-color: linear-gradient( to right, #B47676 0%,#B47676 50%, #4C4D49 50%, #4C4D49 100% );              
+        }
+        &.preset1{
+            --bg-color: linear-gradient( to right, #6D6078 0%, #6D6078 50%, #4C4D49 50%, #4C4D49 100% );              
+        }
+        &.preset2{
+            --bg-color: linear-gradient( to right, #1B1C25 0%, #1B1C25 50%, #4C4D49 50%, #4C4D49 100% );              
+        }
+        &.preset3{
+            --bg-color: linear-gradient( to right, #675B5C 0%, #675B5C 50%, #4C4D49 50%, #4C4D49 100% );              
+        }
+    }
+    .color-presets{            
+        > span{
+            text-indent: -99999px;
+            border: 1px solid #000;
+        }
+    }
+}

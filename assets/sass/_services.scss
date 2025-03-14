@@ -1,0 +1,21 @@
+// services css
+.services-heading {
+    p { &:last-of-type { margin-bottom: 0; } }
+}
+.services-heading {
+    padding-left: 18.5rem;
+    @include media-breakpoint-down(xl) { padding-left: 9rem; }
+    @include media-breakpoint-down(md) { padding-left: 5rem; }
+    @include media-breakpoint-down(sm) { padding-left: 3rem; }
+}
+.icon-size-services {
+    --icon-size: 72px;
+    --tel-phone-border-color: #FF6A6A;
+    --tel-phone-bg-color-rgb: 255, 106, 106;
+    @include media-breakpoint-down(xl){ --icon-size: 60px; }
+    &.icon-filevideo-wrap { transform: none; }
+    &.icon-videodir-wrap {
+        border-color: var(--tel-phone-border-color);
+        background-color: rgba(var(--tel-phone-bg-color-rgb), 0.1);
+    }
+}

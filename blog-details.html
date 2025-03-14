@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color"  content="#2F353D">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gradio is a new modern responsive HTML5 template.">
+    <title hidden>Gradio</title>
+
+    <!-- fav-icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.svg">
+
+        <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <!-- css plugin -->
+    <link rel="stylesheet" href="assets/css/vendor/all.css">
+    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/vendor/leaflet.css">
+    <link rel="stylesheet" href="assets/css/vendor/vertical-number-scroll.css">
+    <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
+
+    <!-- template css -->
+    <link rel="stylesheet" href="assets/css/gradio.css">
+</head>
+<body>
+    <div class="preloader d-flex align-items-center justify-content-center">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img src="assets/images/preloader-icon.svg" alt="loader image"></div>
+		</div>
+	</div>
+    <div id="wrapper" class="d-flex flex-column min-vh-100">
+<!--Mobile-Header ======================-->
+<nav class="navbar navbar-mobile-gradio bg-secondary" aria-label="Offcanvas navbar large">
+    <div class="offcanvas offcanvas-mobile offcanvas-end" data-bs-scroll="true" tabindex="-1" id="gradioRight">
+        <div class="offcanvas-header d-flex align-items-center justify-content-between">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo-dark.svg" alt="gradio logo" class="brand-logo" width="134">
+            </a>
+            <button type="button" class="btn-close common-cross d-flex align-items-center justify-content-center" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg width="12" height="12"><use xlink:href="#icon-cross"></use></svg>
+            </button>
+        </div>
+
+        <div class="offcanvas-body">
+            <ul class="navbar-nav d-flex d-lg-none pb-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link rounded-3 d-inline-flex align-items-center" href="portfolio.html" aria-label="nav-links" data-bs-toggle="dropdown" aria-expanded="true">
+                        <span class="nav-title">Projects</span>
+                        <span class="menu-plus-icon ps-1"><svg width="16" height="16"><use xlink:href="#icon-menu-plus"></use></svg></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-sub-menu shadow">
+                        <li>
+                            <a class="dropdown-item" href="portfolio.html" aria-label="single-pages">
+                                <span>Portfolio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="portfolio-details.html" aria-label="single-pages">
+                                <span>Portfolio Details</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link rounded-3 d-inline-flex align-items-center" href="services.html" aria-label="nav-links">
+                        <span class="nav-title">Services</span>
+                    </a>																		
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link rounded-3 d-inline-flex align-items-center" href="about.html" aria-label="nav-links">
+                        <span class="nav-title">About</span>
+                    </a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link rounded-3 d-inline-flex align-items-center" href="blog.html" aria-label="nav-links" data-bs-toggle="dropdown" aria-expanded="true">
+                        <span class="nav-title">Blogs</span>
+                        <span class="menu-plus-icon ps-1"><svg width="16" height="16"><use xlink:href="#icon-menu-plus"></use></svg></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-sub-menu shadow">
+                        <li>
+                            <a class="dropdown-item" href="blog.html" aria-label="single-pages">
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="blog-details.html" aria-label="single-pages">
+                                <span>Blog Details</span>
+                            </a>
+                        </li>
+                    </ul>																		
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link rounded-3 d-inline-flex align-items-center" href="contact.html" aria-label="nav-links">
+                        <span class="nav-title">Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="d-inline-block d-lg-none pt-5">
+                <a href="contact.html" class="btn btn-outline-primary btn-icon">Get In Touch <span><svg width="21" height="21" class="bi bi-arrow-right-square-fill"><use xlink:href="#icon-right-arrow"></use></svg></span></a>
+            </div>
+        </div>
+    </div>
+</nav>		
+<!--Mobile-Header -->
+<!-- start header -->
+<header class="section-header bg-body pt-15 pt-lg-25 position-relative z-6 shadow is-sticky">
+    <nav class="navbar navbar-gradio navbar-expand-lg pb-lg-3">
+        <div class="container gap-1 gap-xl-2 d-flex align-items-center justify-content-between flex-wrap flex-lg-nowrap">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo-dark.svg" alt="gradio logo"
+                    class="brand-logo" width="134">
+            </a>
+            
+            <div class="bg-dark-subtle rounded-3 py-2 px-xl-4 px-lg-3 px-2">
+                    <div class="collapse navbar-collapse">	
+        <ul class="navbar-nav navbar-nav-list gap-1 justify-content-center flex-grow-1 align-items-center">
+            <li class="nav-item dropdown">
+                <a class="nav-link rounded-3 d-inline-flex align-items-center" href="portfolio.html" aria-label="nav-links" data-bs-toggle="dropdown" aria-expanded="true">
+                    <span class="nav-title">Projects</span>
+                    <span class="menu-plus-icon ps-1"><svg width="16" height="16"><use xlink:href="#icon-menu-plus"></use></svg></span>
+                </a>
+                <ul class="dropdown-menu dropdown-sub-menu shadow">
+                    <li>
+                        <a class="dropdown-item" href="portfolio.html" aria-label="single-pages">
+                            <span>Portfolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="portfolio-details.html" aria-label="single-pages">
+                            <span>Portfolio Details</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link rounded-3 d-inline-flex align-items-center" href="services.html" aria-label="nav-links">
+                    <span class="nav-title">Services</span>
+                </a>																		
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link rounded-3 d-inline-flex align-items-center" href="about.html" aria-label="nav-links">
+                    <span class="nav-title">About</span>
+                </a>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link rounded-3 d-inline-flex align-items-center" href="blog.html" aria-label="nav-links" data-bs-toggle="dropdown" aria-expanded="true">
+                    <span class="nav-title">Blogs</span>
+                    <span class="menu-plus-icon ps-1"><svg width="16" height="16"><use xlink:href="#icon-menu-plus"></use></svg></span>
+                </a>
+                <ul class="dropdown-menu dropdown-sub-menu shadow">
+                    <li>
+                        <a class="dropdown-item" href="blog.html" aria-label="single-pages">
+                            <span>Blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="blog-details.html" aria-label="single-pages">
+                            <span>Blog Details</span>
+                        </a>
+                    </li>
+                </ul>																		
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-3 d-inline-flex align-items-center" href="contact.html" aria-label="nav-links">
+                    <span class="nav-title">Contact</span>
+                </a>
+            </li>
+        </ul>	
+    </div>
+            </div>
+
+            <div class="d-none d-lg-block">
+                <a href="contact.html" class="btn btn-outline-primary btn-icon">Get In Touch <span><svg width="21" height="21" class="bi bi-arrow-right-square-fill"><use xlink:href="#icon-right-arrow"></use></svg></span></a>
+            </div>
+            <div class="d-block d-lg-none navbar-icon navbar-hamburger" data-bs-toggle="offcanvas" data-bs-target="#gradioRight" aria-controls="gradioRight">
+                <svg width="22" height="23" viewBox="0 0 40 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1.5" y1="1.5" x2="38.5" y2="1.5" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="1.5" y1="11.5" x2="38.5" y2="11.5" stroke-width="3" stroke-linecap="round"/>
+                    <line x1="21.5" y1="21.5" x2="38.5" y2="21.5" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- end header -->
+
+<!-- start section-inner-hero -->
+<section class="section section-inner-hero py-50 py-lg-60 py-120">
+    <div class="container">
+        <div class="row gy-5 gy-lg-0 align-items-center">
+            <div class="col-lg-11 col-xl-8 mx-auto">
+                <div class="sec-title-content">
+                    <p class="card-text fs-5 mb-3 text-center wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='50ms'><span class="card-calendar-icon me-2"><svg width="18" height="20"><use xlink:href="#icon-calendar"></use></svg></span> 16 Jan, 2024</p>
+                    <h2 class="mb-0 display-2 text-center text-uppercase extra-bolder wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>Emerging Technologies Shaping the Industry</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end section-inner-hero -->
+
+<!-- start section-blog-details -->
+<section class="section section-blog-details pb-50 pb-lg-60 pb-160">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='50ms'>
+                <div class="details-img overflow-hidden rounded pb-40 pb-lg-50 pb-80">
+                    <img src="assets/images/blogs/blog-details1.jpg" class="img-fluid object-fit-cover w-100 rounded" alt="details image">
+                </div>
+            </div>
+            <div class="col-12 wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='50ms'>
+                <div class="blog-details-content">
+                    <p class="extra-fs-20 mb-5 mb-lg-40">If you’re here, it’s because you know the importance of video marketing. Brands can no longer get by using written content and images alone — nowadays, that’s uninteresting and not as engaging for consumers who are inundated with livestreaming, interactive 360 videos, augmented reality, and more, especially since the myriad of AI tools came onto the scene in 2023.</p>
+                    <p class="extra-fs-20 mb-5 mb-lg-40">And, because of this growth, you’re now behind if you aren’t releasing branded video content regularly. But whether you’re a novice or an expert, most people would agree that getting started can be tough. That’s where we come in!</p>
+                    <p class="extra-fs-20 mb-40 mb-80">Video marketing strategies are nothing new. Just like you wouldn’t create a commercial and buy airtime during the Super Bowl without researching and strategizing, you shouldn’t create a digital marketing video without first doing the proper research and creating a plan.</p>
+                    <h4 class="text-uppercase mb-4 mb-lg-24">How to Build a Video Marketing Strategy</h4>
+                    <ol class="mb-80 mb-40">
+                        <li class="extra-fs-20">Start with your video goals.</li>
+                        <li class="extra-fs-20">Find your target audience.</li>
+                        <li class="extra-fs-20">Figure out what story you want to tell.</li>
+                        <li class="extra-fs-20">Keep creative requirements in line.</li>
+                        <li class="extra-fs-20">Stick to your timeline.</li>
+                        <li class="extra-fs-20">Maintain a realistic budget.</li>
+                    </ol>
+                    <h4 class="text-uppercase mb-4 mb-lg-24">Start with Your Video Goals</h4>
+                    <p class="extra-fs-20 mb-5 mb-lg-40">The first step in creating your video marketing strategy is outlining your video’s goals. Ideally, you’ll want to create a video for every stage of the marketing funnel. But, initially, you’ll have to decide which stage is the most important to target.</p>
+
+                    <ul class="ms-3 ms-lg-5 ms-xl-40 mb-40 mb-80">
+                        <li class="extra-fs-20">Awareness: Here, a challenge or opportunity is defined and the viewer realizes they have a problem. Videos in this stage should attract users and introduce your brand to a new audience.</li>
+                        <li class="extra-fs-20">Consideration: The viewer is now considering how he or she will solve the problem they’re faced with. They’re researching, asking for recommendations, watching product reviews, and trying to find cost-effective solutions.</li>
+                        <li class="extra-fs-20">Decision: The solution has almost been found and you want to remain top of mind. Present your prospect with proof of customer satisfaction and prove why your product or service should be chosen over your competition.</li>
+                    </ul>
+                </div>
+
+                <div class="col-12">
+                    <div class="details-img overflow-hidden rounded pb-40 pb-lg-50 pb-80">
+                        <img src="assets/images/blogs/blog-details2.jpg" class="img-fluid object-fit-cover w-100 rounded" alt="details image">
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="blog-details-content">
+                        <p class="extra-fs-20 mb-5 mb-lg-40">If you’re here, it’s because you know the importance of video marketing. Brands can no longer get by using written content and images alone — nowadays, that’s uninteresting and not as engaging for consumers who are inundated with livestreaming, interactive 360 videos, augmented reality, and more, especially since the myriad of AI tools came onto the scene in 2023.</p>
+                        <p class="extra-fs-20 mb-5 mb-lg-40">And, because of this growth, you’re now behind if you aren’t releasing branded video content regularly. But whether you’re a novice or an expert, most people would agree that getting started can be tough. That’s where we come in!</p>
+                        <p class="extra-fs-20 mb-0">Video marketing strategies are nothing new. Just like you wouldn’t create a commercial and buy airtime during the Super Bowl without researching and strategizing, you shouldn’t create a digital marketing video without first doing the proper research and creating a plan.</p>
+
+                        <div class="row flex-column flex-md-row align-items-md-center justify-content-md-between g-2 g-lg-5 mt-40 mt-80">
+                            <div class="col-md-8">
+                                <div class="blog-single-popular-tags d-flex align-items-center flex-wrap gap-2">
+                                    <a class="btn btn-sm btn-outline-primary tag-btn" href="#">Art Direction</a>
+                                    <a class="btn btn-sm btn-outline-primary tag-btn" href="#">Advertising</a>
+                                    <a class="btn btn-sm btn-outline-primary tag-btn" href="#">Post-Production</a> 
+                                    <a class="btn btn-sm btn-outline-primary tag-btn" href="#">Expertise on</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="d-flex justify-content-md-end gap-2">
+                                    <p class="mb-0 extra-fs-20">Share:</p>
+                                    <div class="social-link-wrap ">
+    <ul class="list-unstyled m-0 d-flex align-items-center gap-2 gap-lg-4">
+        <li><a href="#" class="text-decoration-none" target="_self" aria-label="facebook">
+            <svg width="20" height="20"><use xlink:href="#icon-fabk"></use></svg>
+        </a></li>
+        <li><a href="#" class="text-decoration-none" target="_self" aria-label="x">
+            <svg width="20" height="20"><use xlink:href="#icon-x"></use></svg>
+        </a></li>
+        <li><a href="#" class="text-decoration-none" target="_self" aria-label="instagram">
+            <svg width="20" height="20"><use xlink:href="#icon-inta"></use></svg>
+        </a></li>
+        <li><a href="#" class="text-decoration-none" target="_self" aria-label="thread">
+            <svg width="20" height="20"><use xlink:href="#icon-thrd"></use></svg>
+        </a></li>
+    </ul>
+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end section-blog-details -->
+
+<!-- start section-recent-blog -->
+<section class="section section-recent-blog pb-50 pb-lg-60 pb-160">
+    <div class="container">
+        <div class="row">
+            <div class="title-recent-blog mx-w496 mx-auto pb-40 pb-lg-65">
+                <div class="sec-title-content ">
+    <h2 class="extra-bolder text-gradient-radial mb-0 text-center text-uppercase wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='50ms'>
+        You may
+        <span class="flower-gradient-icon">
+            <img src="assets/images/icons/flower-icon.png" class="green" alt="">
+        </span>
+        also like these blog
+    </h2>
+    
+    
+</div>
+            </div>
+        </div>
+        <div class="row g-24">
+            <div class="col-lg-6 wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='50ms'>
+                <div class="card card-recent-post bg-dark-subtle p-3 p-lg-24 pb-0 pb-lg-0 rounded-4">
+    <a href="blog-details.html" class="stretched-link text-decoration-none" aria-label="blog details link">
+        <img src="assets/images/placeholder.png" data-src="assets/images/blogs/post-img7.jpg" class="card-img-top rounded" alt="post image">
+    </a>
+    <div class="card-body position-relative z-2">
+        <p class="card-text fs-5 mb-3"><span class="card-calendar-icon me-2"><svg width="18" height="20"><use xlink:href="#icon-calendar"></use></svg></span> 16 Jan, 2024</p>
+        <h3 class="card-title text-uppercase text-gradient-linear"><a href="blog-details.html" class="text-decoration-none" aria-label="blog details link">Emerging Technologies Shaping the Industry</a></h3>
+    </div>
+</div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
+                <div class="card card-recent-post bg-dark-subtle p-3 p-lg-24 pb-0 pb-lg-0 rounded-4">
+    <a href="blog-details.html" class="stretched-link text-decoration-none" aria-label="blog details link">
+        <img src="assets/images/placeholder.png" data-src="assets/images/blogs/post-img8.jpg" class="card-img-top rounded" alt="post image">
+    </a>
+    <div class="card-body position-relative z-2">
+        <p class="card-text fs-5 mb-3"><span class="card-calendar-icon me-2"><svg width="18" height="20"><use xlink:href="#icon-calendar"></use></svg></span> 17 Jan, 2024</p>
+        <h3 class="card-title text-uppercase text-gradient-linear"><a href="blog-details.html" class="text-decoration-none" aria-label="blog details link">Video Marketing Trends Shaping 2024 and Beyond</a></h3>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end section-recent-blog -->
+
+<div class="divider divider-gradient border-8"></div>
+<!-- start section-newsletter -->
+<section class="section section-newsletter bg-dark-subtle">
+    <div class="container">
+        <div class="position-relative">
+            <div class="icon-design-wrap icon-user-wrap position-absolute d-none d-lg-flex align-items-lg-center justify-content-lg-center z-1 border rounded-4 movable" data-depth="1">
+                <img src="assets/images/icons/users-icon.png" class="img-fluid object-fit-contain" alt="icon image">
+            </div>
+            <div class="icon-design-wrap icon-video-wrap position-absolute d-none d-lg-flex align-items-lg-center justify-content-lg-center z-1 border rounded-4 movable" data-depth="2">
+                <img src="assets/images/icons/video-icon.png" class="img-fluid object-fit-contain" alt="icon image">
+            </div>
+            <div class="icon-design-wrap icon-images-wrap position-absolute d-none d-lg-flex align-items-lg-center justify-content-lg-center z-1 border rounded-4 movable" data-depth="3">
+                <img src="assets/images/icons/images-icon.png" class="img-fluid object-fit-contain" alt="icon image">
+            </div>
+            <div class="icon-design-wrap icon-blueprint-wrap position-absolute d-none d-lg-flex align-items-lg-center justify-content-lg-center z-1 border rounded-4 movable" data-depth="-1">
+                <img src="assets/images/icons/blueprint-icon.png" class="img-fluid object-fit-contain" alt="icon image">
+            </div>
+            <div class="icon-design-wrap icon-filevideo-wrap position-absolute d-none d-lg-flex align-items-lg-center justify-content-lg-center z-1 border rounded-4 movable" data-depth="-2">
+                <img src="assets/images/icons/file-video-icon.png" class="img-fluid object-fit-contain" alt="icon image">
+            </div>
+            <div class="icon-design-wrap icon-clock-wrap position-absolute d-none d-lg-flex align-items-lg-center justify-content-lg-center z-1 border rounded-4 movable" data-depth="-3">
+                <img src="assets/images/icons/clock-icon.png" class="img-fluid object-fit-contain" alt="icon image">
+            </div>
+        
+            <div class="py-50 py-lg-60 py-120 position-relative z-2">
+                <div class="row">
+                    <div class="col-lg-10 col-xl-8 mx-auto">
+                        <div class="sec-title-content ">
+    <h2 class="mb-0 extra-bolder text-gradient-linear mb-4 text-center text-uppercase wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='50ms'>
+        Ready to Ignite Your Brand? Take Action Now!
+    </h2>
+    
+    <p class="mb-0 lead text-center mb-4 mb-lg-40 mx-w600 mx-auto wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>We don't just create videos; we craft experiences that resonate. Our team of visionary storytellers, cinematographers</p>
+    
+    
+    <div class="d-flex align-items-center justify-content-center gap-12 wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='150ms'>
+        <a href="mailto:hi@example.agency" class="btn btn-primary" aria-label="page-links">hi@example.agency</a>
+    </div>
+    
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end section-newsletter -->
+    
+
+        <footer class="footer-container bg-body pt-50 pt-lg-60 pt-160 mt-auto overflow-hidden">
+    <div class="footer pb-5 pb-md-60 position-relative">
+        <div class="container position-relative z-1">
+            <div class="row gy-4 gy-md-4 gy-lg-0 gx-4">
+                <div class="col-sm-6 col-md-6 col-lg-6 wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='50ms'>
+                    <div class="footer-logo" >
+                        <img src="assets/images/logo-dark.svg" alt="logo image">
+                    </div>
+                    <div class="social-link-wrap pt-4 pt-lg-30">
+    <ul class="list-unstyled m-0 d-flex align-items-center gap-2 gap-lg-4">
+        <li><a href="#" class="text-decoration-none" target="_self" aria-label="facebook">
+            <svg width="20" height="20"><use xlink:href="#icon-fabk"></use></svg>
+        </a></li>
+        <li><a href="#" class="text-decoration-none" target="_self" aria-label="x">
+            <svg width="20" height="20"><use xlink:href="#icon-x"></use></svg>
+        </a></li>
+        <li><a href="#" class="text-decoration-none" target="_self" aria-label="instagram">
+            <svg width="20" height="20"><use xlink:href="#icon-inta"></use></svg>
+        </a></li>
+        <li><a href="#" class="text-decoration-none" target="_self" aria-label="thread">
+            <svg width="20" height="20"><use xlink:href="#icon-thrd"></use></svg>
+        </a></li>
+    </ul>
+</div>
+                    <div class="pt-4 pt-lg-40 mx-w240">
+                        <p class="mb-5">Suite 739 7602 Anibal Groves, South Valentin, MD 33052</p>
+                        <p class="mb-0"><a href="tel:33756492869" class="text-decoration-none" aria-label="phone number">+337 564 92869</a></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-2">
+                    <div class="footer-widget wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
+                        <h6 class="pb-30 mb-0">Services</h6>
+                        <ul class="footer-menu-list list-unstyled mb-0">
+                            <li><a href="#" class="text-decoration-none" aria-label="page-link">Ads Production</a></li>
+                            <li><a href="#" class="text-decoration-none" aria-label="page-link">Ads Marketing</a></li>
+                            <li><a href="#" class="text-decoration-none" aria-label="page-link">Ads Direction</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-2">
+                    <div class="footer-widget wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='150ms'>
+                        <h6 class="pb-30 mb-0">Projects</h6>
+                        <ul class="footer-menu-list list-unstyled mb-0">
+                            <li><a href="#" class="text-decoration-none" aria-label="page-link">Cocacola Brand</a></li>
+                            <li><a href="#" class="text-decoration-none" aria-label="page-link">Nestle Product</a></li>
+                            <li><a href="#" class="text-decoration-none" aria-label="page-link">KIA Motors</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-12 col-lg-2">
+                    <div class="footer-widget wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms'>
+                        <h6 class="pb-30 mb-0">Quick Link</h6>
+                        <ul class="footer-menu-list list-unstyled mb-0">
+                            <li><a href="blog.html" class="text-decoration-none" aria-label="page-link">Blog & News</a></li>
+                            <li><a href="contact.html" class="text-decoration-none" aria-label="page-link">Contact</a></li>
+                            <li><a href="about.html" class="text-decoration-none" aria-label="page-link">About us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="divider border-top"></div>
+    <div class="container position-relative z-1">
+        <div class="footer-copyright py-4 d-sm-flex align-items-sm-center justify-content-sm-between wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='250ms'>
+            <p class="mb-8 mb-sm-0 copyright-text">&#169; <span class="dynamic-year">2025 </span> GRAIEO Copyright</p>
+            <ul class="list-unstyled mb-0 d-flex align-items-center gap-12">
+                <li class="copyright-text"><a href="terms-condition.html" class="copyright-text text-decoration-none" aria-label="terms-condition link">Terms & Conditions</a></li>
+                <li class="copyright-text"><a href="privacy-policy.html" class="copyright-text text-decoration-none" aria-label="privacy-policy link">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+    </div>
+    <!-- /#wrapper end -->
+
+    <a href="#" id="back-to-top" class="position-fixed shadow bg-transparent d-flex align-items-center justify-content-center rounded-circle">
+        <span class="back-top-icon position-absolute w-100 h-100 top-0 start-0 end-0 z-1 bottom-0 m-auto d-flex align-items-center justify-content-center rounded-circle border border-2">
+            <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 17V1M7 1L1 7M7 1L13 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+    </span>
+    </a>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="icon-right-arrow" viewBox="0 0 21 21" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M14.58 20.5H6.41C2.88 20.5 0.5 18.229 0.5 14.84V6.17C0.5 2.78 2.88 0.5 6.41 0.5H14.58C18.12 0.5 20.5 2.78 20.5 6.17V14.84C20.5 18.229 18.12 20.5 14.58 20.5ZM12.77 9.75H6.42C6 9.75 5.67 10.09 5.67 10.5C5.67 10.92 6 11.25 6.42 11.25H12.77L10.29 13.72C10.15 13.86 10.07 14.06 10.07 14.25C10.07 14.439 10.15 14.63 10.29 14.78C10.58 15.07 11.06 15.07 11.35 14.78L15.12 11.03C15.4 10.75 15.4 10.25 15.12 9.97L11.35 6.22C11.06 5.93 10.58 5.93 10.29 6.22C10 6.52 10 6.99 10.29 7.29L12.77 9.75Z"
+            fill="currentColor" />
+    </symbol>
+    <symbol id="icon-plus-star" viewBox="0 0 36 37" fill="none">
+        <path d="M26.8689 17.3333C22.5872 17.3411 19.1277 13.7861 19.1353 9.38341C19.1353 9.33894 19.1353 9.29447 19.1353 9.25C19.1353 4.14105 18.6262 0 18 0C17.3738 0 16.8647 4.14105 16.8647 9.25C16.8647 9.29447 16.8647 9.33632 16.8647 9.38079C16.8723 13.7834 13.4103 17.3385 9.12855 17.3307C9.08528 17.3307 9.04455 17.3307 9.00127 17.3307C4.0297 17.3307 0 17.8512 0 18.4974C0 19.1409 4.0297 19.6667 9.00127 19.6667C9.04455 19.6667 9.08782 19.6667 9.1311 19.6667C13.4128 19.6589 16.8723 23.2139 16.8647 27.6166C16.8647 27.6611 16.8647 27.7055 16.8647 27.75C16.8647 32.859 17.3738 37 18 37C18.6288 37 19.1353 32.859 19.1353 27.75C19.1353 27.7055 19.1353 27.6637 19.1353 27.6192C19.1277 23.2166 22.5897 19.6615 26.8714 19.6693C26.9147 19.6693 26.9555 19.6693 26.9987 19.6693C31.9703 19.6693 36 19.1488 36 18.5026C36 17.8591 31.9703 17.3333 26.9987 17.3333C26.9555 17.3333 26.9122 17.3333 26.8689 17.3333Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-fabk" viewBox="0 0 20 20" fill="none">
+        <g clip-path="url(#clip0_11250_2831)">
+            <path d="M10 0C4.4772 0 0 4.4772 0 10C0 14.6896 3.2288 18.6248 7.5844 19.7056V13.056H5.5224V10H7.5844V8.6832C7.5844 5.2796 9.1248 3.702 12.4664 3.702C13.1 3.702 14.1932 3.8264 14.6404 3.9504V6.7204C14.4044 6.6956 13.9944 6.6832 13.4852 6.6832C11.8456 6.6832 11.212 7.3044 11.212 8.9192V10H14.4784L13.9172 13.056H11.212V19.9268C16.1636 19.3288 20.0004 15.1128 20.0004 10C20 4.4772 15.5228 0 10 0Z" fill="currentColor"/>
+        </g>
+        <defs>
+            <clipPath id="clip0_11250_2831">
+            <rect width="20" height="20" fill="currentColor"/>
+            </clipPath>
+        </defs>
+    </symbol>
+    <symbol id="icon-x" viewBox="0 0 20 20" fill="none">
+        <path d="M15.2706 1.58691H18.0818L11.9401 8.60649L19.1654 18.1586H13.5081L9.07706 12.3653L4.00699 18.1586H1.19406L7.76323 10.6503L0.832031 1.58691H6.63296L10.6382 6.88219L15.2706 1.58691ZM14.284 16.4759H15.8417L5.78653 3.18119H4.11492L14.284 16.4759Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-inta" viewBox="0 0 20 20" fill="none">
+        <g clip-path="url(#clip0_11250_2834)">
+            <path d="M10 1.80078C12.6719 1.80078 12.9883 1.8125 14.0391 1.85937C15.0156 1.90234 15.543 2.06641 15.8945 2.20313C16.3594 2.38281 16.6953 2.60156 17.043 2.94922C17.3945 3.30078 17.6094 3.63281 17.7891 4.09766C17.9258 4.44922 18.0898 4.98047 18.1328 5.95312C18.1797 7.00781 18.1914 7.32422 18.1914 9.99219C18.1914 12.6641 18.1797 12.9805 18.1328 14.0313C18.0898 15.0078 17.9258 15.5352 17.7891 15.8867C17.6094 16.3516 17.3906 16.6875 17.043 17.0352C16.6914 17.3867 16.3594 17.6016 15.8945 17.7813C15.543 17.918 15.0117 18.082 14.0391 18.125C12.9844 18.1719 12.668 18.1836 10 18.1836C7.32813 18.1836 7.01172 18.1719 5.96094 18.125C4.98438 18.082 4.45703 17.918 4.10547 17.7813C3.64063 17.6016 3.30469 17.3828 2.95703 17.0352C2.60547 16.6836 2.39063 16.3516 2.21094 15.8867C2.07422 15.5352 1.91016 15.0039 1.86719 14.0313C1.82031 12.9766 1.80859 12.6602 1.80859 9.99219C1.80859 7.32031 1.82031 7.00391 1.86719 5.95312C1.91016 4.97656 2.07422 4.44922 2.21094 4.09766C2.39063 3.63281 2.60938 3.29688 2.95703 2.94922C3.30859 2.59766 3.64063 2.38281 4.10547 2.20313C4.45703 2.06641 4.98828 1.90234 5.96094 1.85937C7.01172 1.8125 7.32813 1.80078 10 1.80078ZM10 0C7.28516 0 6.94531 0.0117187 5.87891 0.0585938C4.81641 0.105469 4.08594 0.277344 3.45313 0.523438C2.79297 0.78125 2.23438 1.12109 1.67969 1.67969C1.12109 2.23438 0.78125 2.79297 0.523438 3.44922C0.277344 4.08594 0.105469 4.8125 0.0585938 5.875C0.0117188 6.94531 0 7.28516 0 10C0 12.7148 0.0117188 13.0547 0.0585938 14.1211C0.105469 15.1836 0.277344 15.9141 0.523438 16.5469C0.78125 17.207 1.12109 17.7656 1.67969 18.3203C2.23438 18.875 2.79297 19.2188 3.44922 19.4727C4.08594 19.7188 4.8125 19.8906 5.875 19.9375C6.94141 19.9844 7.28125 19.9961 9.99609 19.9961C12.7109 19.9961 13.0508 19.9844 14.1172 19.9375C15.1797 19.8906 15.9102 19.7188 16.543 19.4727C17.1992 19.2188 17.7578 18.875 18.3125 18.3203C18.8672 17.7656 19.2109 17.207 19.4648 16.5508C19.7109 15.9141 19.8828 15.1875 19.9297 14.125C19.9766 13.0586 19.9883 12.7188 19.9883 10.0039C19.9883 7.28906 19.9766 6.94922 19.9297 5.88281C19.8828 4.82031 19.7109 4.08984 19.4648 3.45703C19.2188 2.79297 18.8789 2.23438 18.3203 1.67969C17.7656 1.125 17.207 0.78125 16.5508 0.527344C15.9141 0.28125 15.1875 0.109375 14.125 0.0625C13.0547 0.0117188 12.7148 0 10 0Z" fill="currentColor"/>
+            <path d="M10 4.86328C7.16406 4.86328 4.86328 7.16406 4.86328 10C4.86328 12.8359 7.16406 15.1367 10 15.1367C12.8359 15.1367 15.1367 12.8359 15.1367 10C15.1367 7.16406 12.8359 4.86328 10 4.86328ZM10 13.332C8.16016 13.332 6.66797 11.8398 6.66797 10C6.66797 8.16016 8.16016 6.66797 10 6.66797C11.8398 6.66797 13.332 8.16016 13.332 10C13.332 11.8398 11.8398 13.332 10 13.332Z" fill="currentColor"/>
+            <path d="M16.5391 4.66016C16.5391 5.32422 16 5.85938 15.3398 5.85938C14.6758 5.85938 14.1406 5.32031 14.1406 4.66016C14.1406 3.99609 14.6797 3.46094 15.3398 3.46094C16 3.46094 16.5391 4 16.5391 4.66016Z" fill="currentColor"/>
+        </g>
+        <defs>
+            <clipPath id="clip0_11250_2834">
+            <rect width="20" height="20" fill="currentColor"/>
+            </clipPath>
+        </defs>
+    </symbol>
+    <symbol id="icon-thrd" viewBox="0 0 20 20" fill="none">
+        <path d="M14.7447 9.26961C14.6586 9.22832 14.5711 9.18858 14.4824 9.15053C14.3281 6.30606 12.7738 4.6776 10.164 4.66094C10.1522 4.66086 10.1404 4.66086 10.1286 4.66086C8.56759 4.66086 7.26933 5.32718 6.47026 6.53966L7.90557 7.52425C8.50251 6.61857 9.43934 6.4255 10.1293 6.4255C10.1372 6.4255 10.1453 6.4255 10.1531 6.42557C11.0124 6.43105 11.6609 6.6809 12.0806 7.16813C12.386 7.52284 12.5903 8.01302 12.6914 8.63165C11.9295 8.50216 11.1056 8.46234 10.2247 8.51284C7.74346 8.65577 6.14829 10.1029 6.25543 12.1137C6.30979 13.1337 6.81794 14.0112 7.6862 14.5845C8.4203 15.0691 9.36578 15.306 10.3484 15.2524C11.6461 15.1812 12.6641 14.6861 13.3743 13.7808C13.9137 13.0933 14.2548 12.2024 14.4055 11.0798C15.0239 11.453 15.4822 11.9442 15.7354 12.5346C16.1658 13.5382 16.1909 15.1875 14.8452 16.5321C13.6661 17.71 12.2488 18.2196 10.1069 18.2353C7.73091 18.2177 5.93399 17.4557 4.76569 15.9705C3.67167 14.5798 3.10627 12.571 3.08518 10C3.10627 7.42894 3.67167 5.42017 4.76569 4.02945C5.93399 2.54426 7.73088 1.78229 10.1068 1.76464C12.5001 1.78243 14.3283 2.54806 15.5413 4.04042C16.1361 4.77225 16.5845 5.69258 16.8802 6.76566L18.5621 6.3169C18.2038 4.99606 17.6399 3.85789 16.8727 2.91396C15.3176 1.0007 13.0432 0.0203279 10.1127 0H10.101C7.17647 0.0202573 4.92756 1.00435 3.41675 2.92493C2.07233 4.634 1.37884 7.01205 1.35554 9.99297L1.35547 10L1.35554 10.007C1.37884 12.9879 2.07233 15.366 3.41675 17.0751C4.92756 18.9956 7.17647 19.9798 10.101 20H10.1127C12.7128 19.982 14.5455 19.3013 16.0553 17.7928C18.0306 15.8194 17.9711 13.3457 17.3201 11.8272C16.853 10.7382 15.9624 9.85377 14.7447 9.26961ZM10.2555 13.4903C9.16802 13.5516 8.03822 13.0634 7.98251 12.0179C7.94122 11.2427 8.5342 10.3777 10.3223 10.2747C10.527 10.2629 10.728 10.2571 10.9254 10.2571C11.5748 10.2571 12.1824 10.3202 12.7348 10.4409C12.5288 13.0141 11.3203 13.4319 10.2555 13.4903Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-play-pause" viewBox="0 0 69 40" fill="none">
+        <path d="M23.3941 14.8705C20.0658 12.278 16.7273 9.72724 13.3161 7.24931C10.8692 5.46896 7.064 1.43973 4.06756 1.05451C0.635661 0.617228 -0.224903 2.87651 0.272774 5.47937C-0.390796 15.287 0.324617 25.2611 0.646034 35.0687C0.697875 36.6096 2.76116 37.734 3.89131 36.4222C4.03646 36.2556 4.17125 36.0994 4.31641 35.9328C5.97534 35.7246 7.261 34.2462 8.75404 32.7469C13.6686 27.8223 18.5106 22.8248 23.3837 17.8586C24.1095 17.1194 24.2961 15.5681 23.3837 14.8601L23.3941 14.8705ZM5.55023 25.4902C5.43618 25.7192 5.32213 25.9483 5.19771 26.1773C4.72077 26.4376 4.34751 26.9165 4.2853 27.6453C4.27493 27.8431 4.2542 28.0306 4.24383 28.2284C4.12978 24.0326 4.00536 19.8263 3.75652 15.6409C4.30604 18.931 4.9074 22.2106 5.53987 25.4902H5.55023Z" fill="currentColor"/>
+        <path d="M41.7432 0.231548C37.413 2.83536 35.0361 10.9605 33.1035 15.4048C29.9825 22.5992 26.8511 29.846 24.1125 37.1973C23.6061 38.5567 24.8979 40.0207 26.2207 39.9998H26.6651C27.8846 39.9789 28.8457 38.7136 28.6804 37.5737C31.0366 32.2406 33.1552 26.803 35.3461 21.3967C36.7206 17.9877 38.0744 14.5682 39.5626 11.2115C40.6581 8.7436 41.8052 4.66535 43.5931 2.66805C44.7299 1.39228 43.283 -0.699131 41.7329 0.231548H41.7432Z" fill="currentColor"/>
+        <path d="M56.97 10.8765C57.078 8.98707 56.97 7.67176 55.3501 6.4504C54.1839 5.57353 52.7476 6.09548 52.1104 7.00367C51.7109 7.00367 51.3113 7.24377 51.1169 7.68221C48.212 14.3736 49.1947 23.8834 49.0435 31.0863C48.9895 33.529 49.2271 38.2474 53.2983 36.692C57.5639 35.0635 55.3502 25.8981 55.5229 22.589C55.7389 18.6535 56.7432 14.7807 56.97 10.8765Z" fill="currentColor"/>
+        <path d="M67.438 5.94415C66.6974 4.56988 65.135 4.85529 64.3944 5.78557C63.5118 5.28872 62.0508 5.96529 61.9493 7.23385C61.6145 11.3884 61.8175 15.5641 61.716 19.7186C61.6145 23.7991 60.8232 28.1334 61.0362 32.1928C61.1783 34.7933 62.5073 38.1338 65.693 36.6221C69.4063 34.8673 67.9758 27.6471 68.0163 24.4863C68.0772 18.302 70.5324 11.6632 67.4482 5.94415H67.438Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-ads-power" viewBox="0 0 27 40" fill="none">
+        <path d="M26.6259 19.726C26.7666 19.2443 26.5712 18.6928 25.9225 18.4753C24.4609 17.9936 23.015 17.4887 21.5691 16.976C21.6238 16.1992 20.5061 15.7175 19.8887 16.3701C19.8496 16.3545 19.8027 16.339 19.7636 16.3235C19.7793 16.3002 19.7949 16.2691 19.8105 16.2458C20.0684 15.8418 20.3185 15.4379 20.5608 15.0184C22.7336 11.8722 24.6485 8.58624 26.2664 5.10604C26.4852 4.63994 26.4383 3.94856 25.8912 3.69998C23.2573 2.49589 20.4749 0.825693 17.6299 0.118777C17.4033 -0.0132837 17.1063 -0.044355 16.8405 0.0721696C16.8171 0.0799379 16.8014 0.0877128 16.778 0.103249C16.6061 0.188701 16.4732 0.328514 16.395 0.499417C11.94 6.33341 7.19583 11.88 1.99051 17.0614C1.84983 17.1391 1.74823 17.2401 1.67789 17.3644C1.22457 17.815 0.771254 18.2655 0.310122 18.7083C-0.26043 19.2521 -0.0103128 20.3319 0.786898 20.5106C4.62445 21.3729 8.48543 22.0798 12.3699 22.6702C12.3542 22.709 12.3386 22.7401 12.3308 22.7789C12.237 23.0508 12.2917 23.2839 12.4246 23.4703C11.3851 25.5211 10.3534 27.5797 9.3139 29.6306C8.88404 30.3142 8.44637 30.9978 8.0165 31.6814C7.85237 31.9455 7.82891 32.2019 7.89925 32.4349C6.90664 34.4003 5.91405 36.3657 4.92926 38.3233C4.41341 39.3409 5.44511 40.3819 6.47679 39.8614C7.64916 39.271 8.73554 38.5874 9.78286 37.8417C10.1111 37.9426 10.4706 37.8805 10.7598 37.5698C11.2913 36.9949 11.815 36.4123 12.3308 35.8219C17.4345 31.3551 21.3815 25.5056 26.6806 21.2175C27.1964 20.798 27.0245 20.1144 26.6103 19.7182L26.6259 19.726ZM19.662 20.4018C19.1774 21.0621 18.6929 21.7147 18.2161 22.375C18.6616 21.7147 19.0993 21.0466 19.5291 20.3785C19.576 20.3863 19.6151 20.3941 19.662 20.4018ZM13.4876 14.4824C14.105 13.6978 14.699 12.8976 15.2852 12.0897C14.7772 13.2317 14.2926 14.3892 13.8471 15.5622C13.5344 15.8807 13.2218 16.1759 12.8935 16.44C12.6434 16.4245 12.3855 16.4167 12.1276 16.4244C12.1979 16.2613 12.2761 16.0982 12.3543 15.9428C12.7372 15.4612 13.1124 14.964 13.4876 14.4824ZM14.1519 27.9604C14.7615 27.2068 15.3477 26.4456 15.9261 25.6687C15.5666 26.1892 15.1992 26.7097 14.8475 27.2379C14.527 27.6341 14.1988 28.0148 13.8705 28.4032C13.9643 28.2556 14.0581 28.108 14.1597 27.9604H14.1519ZM10.627 15.5389C10.5801 15.6321 10.541 15.7253 10.5019 15.8185C10.2049 16.0904 9.9001 16.3468 9.59528 16.5565C9.7516 16.339 9.90792 16.1292 10.0642 15.9117C10.2596 15.7952 10.4472 15.6632 10.6348 15.5389H10.627ZM8.79808 19.7337C10.033 19.7337 11.2757 19.7337 12.5106 19.7337C12.7294 19.7337 12.917 19.6561 13.0655 19.5395C13.0499 19.6328 13.0264 19.7337 13.0108 19.827C12.9639 20.1144 13.042 20.3552 13.1749 20.5417C11.518 20.2931 9.86103 20.0289 8.2119 19.7337C8.40729 19.7337 8.59486 19.7337 8.79026 19.726L8.79808 19.7337ZM23.523 5.96831C23.5308 5.92947 23.5465 5.89062 23.5543 5.84401C23.7575 4.9895 22.5382 4.35251 22.0615 5.09826C22.3038 4.57779 21.9911 4.135 21.5769 4.0107C21.5769 3.95633 21.5769 3.90193 21.5691 3.84755C22.3819 4.2515 23.1869 4.66324 23.992 5.05165C23.8435 5.35462 23.6715 5.65757 23.523 5.96053V5.96831ZM17.3095 1.85887C17.9113 2.10746 18.5131 2.37159 19.1071 2.65125C16.6998 3.56014 14.8084 6.99372 13.3156 8.82704C11.8306 10.6448 10.3534 12.4937 8.93094 14.3736C8.01649 14.9329 7.05515 15.4146 6.05473 15.8263C10.1189 11.4217 13.9096 6.78399 17.3173 1.85112L17.3095 1.85887ZM3.24887 18.8015C4.10079 18.8404 4.9527 18.887 5.80462 18.9491C5.83589 19.089 5.8906 19.221 5.97657 19.3376C5.06212 19.1666 4.15549 18.988 3.24104 18.8015H3.24887Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-heart" viewBox="0 0 37 40" fill="none">
+        <path d="M34.958 3.62835C28.0616 -3.71334 20.5859 6.40704 17.2185 13.6806C15.3597 5.79409 8.49011 -5.00732 1.55322 2.57956C-2.2587 6.73395 1.88996 12.3049 3.95083 16.1733C6.14638 20.3141 14.2955 35.624 15.5886 37.9259C16.747 39.9827 20.3165 41.0723 21.6904 38.4844C23.5627 34.9429 32.4661 19.9735 34.8368 15.9145C37.0189 12.1687 38.2851 7.16983 34.985 3.65562L34.958 3.62835Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-calendar" viewBox="0 0 18 20" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4109 0.768617L13.4119 1.51824C16.1665 1.73413 17.9862 3.61119 17.9891 6.48975L18 14.9155C18.0039 18.054 16.0322 19.985 12.8718 19.99L5.15188 20C2.01119 20.004 0.0148166 18.027 0.0108673 14.8795L6.64975e-06 6.55272C-0.00394266 3.65517 1.75153 1.78311 4.50617 1.53024L4.50518 0.780611C4.5042 0.340832 4.83001 0.00999726 5.26444 0.00999726C5.69886 0.00899776 6.02468 0.338833 6.02567 0.778612L6.02666 1.47826L11.8914 1.47027L11.8904 0.770616C11.8894 0.330837 12.2152 0.00100177 12.6497 2.26549e-06C13.0742 -0.000997234 13.4099 0.328838 13.4109 0.768617ZM1.52148 6.86157L16.4696 6.84158V6.49175C16.4272 4.34283 15.349 3.21539 13.4138 3.04748L13.4148 3.81709C13.4148 4.24688 13.0801 4.5877 12.6556 4.5877C12.2212 4.5887 11.8943 4.24887 11.8943 3.81909L11.8934 3.0095L6.02863 3.01749L6.02962 3.82609C6.02962 4.25687 5.70479 4.5967 5.27036 4.5967C4.83594 4.5977 4.50913 4.25887 4.50913 3.82809L4.50815 3.05847C2.58286 3.25137 1.51753 4.38281 1.52049 6.55072L1.52148 6.86157ZM12.2399 11.4043V11.4153C12.2498 11.8751 12.625 12.2239 13.0801 12.2139C13.5244 12.2029 13.8789 11.8221 13.869 11.3623C13.8483 10.9225 13.4918 10.5637 13.0485 10.5647C12.5944 10.5747 12.2389 10.9445 12.2399 11.4043ZM13.0554 15.892C12.6013 15.882 12.235 15.5032 12.234 15.0435C12.2241 14.5837 12.5884 14.2029 13.0426 14.1919H13.0525C13.5165 14.1919 13.8927 14.5707 13.8927 15.0405C13.8937 15.5102 13.5185 15.891 13.0554 15.892ZM8.17212 11.4203C8.19187 11.8801 8.56804 12.2389 9.02221 12.2189C9.46651 12.1979 9.82096 11.8181 9.80121 11.3583C9.79035 10.9085 9.42504 10.5587 8.98074 10.5597C8.52657 10.5797 8.17113 10.9605 8.17212 11.4203ZM9.02616 15.8471C8.57199 15.8671 8.1968 15.5082 8.17607 15.0485C8.17607 14.5887 8.53052 14.2089 8.98469 14.1879C9.42899 14.1869 9.79529 14.5367 9.80516 14.9855C9.82589 15.4463 9.47046 15.8261 9.02616 15.8471ZM4.10433 11.4553C4.12408 11.915 4.50025 12.2749 4.95442 12.2539C5.39872 12.2339 5.75317 11.8531 5.73243 11.3933C5.72256 10.9435 5.35725 10.5937 4.91196 10.5947C4.45779 10.6147 4.10334 10.9955 4.10433 11.4553ZM4.95837 15.8521C4.5042 15.8731 4.12901 15.5132 4.10828 15.0535C4.10729 14.5937 4.46273 14.2129 4.9169 14.1929C5.3612 14.1919 5.7275 14.5417 5.73737 14.9915C5.7581 15.4513 5.40365 15.8321 4.95837 15.8521Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-arrow-left" viewBox="0 0 48 48" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.667969 24.0003C0.667969 11.1203 11.1446 0.666992 24.0013 0.666992L24.6541 0.675962C37.2326 1.02204 47.3346 11.3386 47.3346 24.0003C47.3346 36.857 36.8813 47.3337 24.0013 47.3337C11.1446 47.3337 0.667969 36.857 0.667969 24.0003ZM28.6213 33.3337C29.298 32.6337 29.298 31.537 28.598 30.8603L21.7146 24.0003L28.598 17.1403C29.298 16.4637 29.298 15.3437 28.6213 14.667C27.9213 13.967 26.8246 13.967 26.148 14.667L18.0046 22.7637C17.678 23.0903 17.4913 23.5337 17.4913 24.0003C17.4913 24.467 17.678 24.9103 18.0046 25.237L26.148 33.3337C26.4746 33.6837 26.918 33.847 27.3613 33.847C27.828 33.847 28.2713 33.6837 28.6213 33.3337Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 48 48" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M47.3346 24.0003C47.3346 36.8803 36.858 47.3337 24.0013 47.3337L23.3485 47.3247C10.77 46.9786 0.667969 36.662 0.667969 24.0003C0.667969 11.1437 11.1213 0.666992 24.0013 0.666992C36.858 0.666992 47.3346 11.1437 47.3346 24.0003ZM19.3813 14.667C18.7046 15.367 18.7046 16.4637 19.4046 17.1403L26.288 24.0003L19.4046 30.8603C18.7046 31.537 18.7046 32.657 19.3813 33.3337C20.0813 34.0337 21.178 34.0337 21.8546 33.3337L29.998 25.237C30.3246 24.9103 30.5113 24.467 30.5113 24.0003C30.5113 23.5337 30.3246 23.0903 29.998 22.7637L21.8546 14.667C21.528 14.317 21.0846 14.1537 20.6413 14.1537C20.1746 14.1537 19.7313 14.317 19.3813 14.667Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-menu-plus" viewBox="0 0 16 16" fill="none">
+        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+    </symbol>
+    <symbol id="icon-profile" viewBox="0 0 16 21" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.294 5.79105C13.294 8.72808 10.9391 11.0831 8 11.0831C5.0619 11.0831 2.70601 8.72808 2.70601 5.79105C2.70601 2.85402 5.0619 0.5 8 0.5C10.9391 0.5 13.294 2.85402 13.294 5.79105ZM8 20.5C3.66237 20.5 0 19.795 0 17.075C0 14.3539 3.68538 13.6739 8 13.6739C12.3386 13.6739 16 14.3789 16 17.099C16 19.82 12.3146 20.5 8 20.5Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-job" viewBox="0 0 20 21" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.70435 2.01898C8.03402 2.01898 7.46373 2.4848 7.30365 3.11265H12.6863C12.5263 2.4848 11.956 2.01898 11.2856 2.01898H8.70435ZM14.2071 3.11264H16.1881C18.2891 3.11264 20 4.84428 20 6.97085C20 6.97085 19.94 7.8711 19.92 9.12477C19.918 9.22401 19.8699 9.32122 19.7909 9.37996C19.3097 9.7354 18.8694 10.0291 18.8294 10.0493C17.1686 11.1632 15.2386 11.947 13.1826 12.3369C13.0485 12.3632 12.9165 12.2934 12.8484 12.1739C12.2721 11.1754 11.1956 10.5253 9.995 10.5253C8.8024 10.5253 7.71586 11.1683 7.12256 12.1678C7.05353 12.2853 6.92346 12.3531 6.7904 12.3278C4.75138 11.9369 2.82141 11.1541 1.17059 10.0594L0.210105 9.39109C0.130065 9.34046 0.08004 9.24932 0.08004 9.14806C0.050025 8.63161 0 6.97085 0 6.97085C0 4.84428 1.71086 3.11264 3.81191 3.11264H5.78289C5.97299 1.6443 7.2036 0.5 8.70435 0.5H11.2856C12.7864 0.5 14.017 1.6443 14.2071 3.11264ZM19.6598 11.3152L19.6198 11.3355C17.5988 12.6924 15.1676 13.5937 12.6163 13.9684C12.2561 14.019 11.8959 13.7861 11.7959 13.4216C11.5758 12.5912 10.8654 12.0443 10.015 12.0443H10.005H9.98499C9.13457 12.0443 8.42421 12.5912 8.2041 13.4216C8.10405 13.7861 7.74387 14.019 7.38369 13.9684C4.83242 13.5937 2.4012 12.6924 0.38019 11.3355C0.370185 11.3254 0.270135 11.2646 0.190095 11.3152C0.10005 11.3659 0.10005 11.4874 0.10005 11.4874L0.170085 16.6519C0.170085 18.7785 1.87094 20.5 3.97199 20.5H16.018C18.1191 20.5 19.8199 18.7785 19.8199 16.6519L19.9 11.4874C19.9 11.4874 19.9 11.3659 19.8099 11.3152C19.7599 11.2849 19.6999 11.295 19.6598 11.3152ZM10.7454 15.5583C10.7454 15.9836 10.4152 16.3177 9.995 16.3177C9.58479 16.3177 9.24462 15.9836 9.24462 15.5583V14.2519C9.24462 13.8367 9.58479 13.4924 9.995 13.4924C10.4152 13.4924 10.7454 13.8367 10.7454 14.2519V15.5583Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-paper-file" viewBox="0 0 18 21" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.92574 14.89H11.3119C11.7178 14.89 12.0545 14.55 12.0545 14.14C12.0545 13.73 11.7178 13.4 11.3119 13.4H5.92574C5.5198 13.4 5.18317 13.73 5.18317 14.14C5.18317 14.55 5.5198 14.89 5.92574 14.89ZM9.27228 8.4H5.92574C5.5198 8.4 5.18317 8.74 5.18317 9.15C5.18317 9.56 5.5198 9.89 5.92574 9.89H9.27228C9.67822 9.89 10.0149 9.56 10.0149 9.15C10.0149 8.74 9.67822 8.4 9.27228 8.4ZM16.3381 7.52561C16.5708 7.52292 16.8242 7.52 17.0545 7.52C17.302 7.52 17.5 7.72 17.5 7.97V16.01C17.5 18.49 15.5099 20.5 13.0545 20.5H5.17327C2.59901 20.5 0.5 18.39 0.5 15.79V5.01C0.5 2.53 2.5 0.5 4.96535 0.5H10.2525C10.5099 0.5 10.7079 0.71 10.7079 0.96V4.18C10.7079 6.01 12.203 7.51 14.0149 7.52C14.4381 7.52 14.8112 7.52316 15.1377 7.52593C15.3917 7.52809 15.6175 7.53 15.8168 7.53C15.9578 7.53 16.1405 7.52789 16.3381 7.52561ZM16.6111 6.066C15.7972 6.069 14.8378 6.066 14.1477 6.059C13.0527 6.059 12.1507 5.148 12.1507 4.042V1.406C12.1507 0.975 12.6685 0.761 12.9646 1.072C13.5004 1.63476 14.2368 2.40834 14.9699 3.17837C15.7009 3.94632 16.4286 4.71074 16.9507 5.259C17.2398 5.562 17.0279 6.065 16.6111 6.066Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-time-clock" viewBox="0 0 20 21" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M10 20.5C4.48 20.5 0 16.03 0 10.5C0 4.98 4.48 0.5 10 0.5C15.53 0.5 20 4.98 20 10.5C20 16.03 15.53 20.5 10 20.5ZM13.19 14.21C13.31 14.28 13.44 14.32 13.58 14.32C13.83 14.32 14.08 14.19 14.22 13.95C14.43 13.6 14.32 13.14 13.96 12.92L10.4 10.8V6.18C10.4 5.76 10.06 5.43 9.65 5.43C9.24 5.43 8.9 5.76 8.9 6.18V11.23C8.9 11.49 9.04 11.73 9.27 11.87L13.19 14.21Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-video-play" viewBox="0 0 40 40" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33203 20.0093C3.33203 10.8101 10.8127 3.33301 19.9987 3.33301C29.1847 3.33301 36.6654 10.8101 36.6654 20.0093C36.6654 29.1893 29.1847 36.6663 19.9987 36.6663C10.8127 36.6663 3.33203 29.1893 3.33203 20.0093ZM26.112 21.6961C26.2889 21.5192 26.5141 21.2459 26.5624 21.1815C26.8198 20.8439 26.9485 20.4258 26.9485 20.0093C26.9485 19.5414 26.8037 19.1072 26.5302 18.7535C26.5078 18.7311 26.4639 18.6833 26.4067 18.6211C26.2997 18.5046 26.1461 18.3374 25.9993 18.1907C24.6802 16.7757 21.2374 14.4602 19.4356 13.7527C19.1621 13.6417 18.4704 13.3989 18.1004 13.3829C17.7464 13.3829 17.4086 13.4633 17.0869 13.6241C16.6847 13.8492 16.3629 14.2029 16.186 14.621C16.0733 14.9104 15.8964 15.7787 15.8964 15.7948C15.7194 16.7435 15.6229 18.2872 15.6229 19.9916C15.6229 21.6173 15.7194 23.095 15.8642 24.0598C15.8682 24.0638 15.882 24.1328 15.9035 24.24C15.9689 24.5659 16.105 25.2448 16.2503 25.5231C16.6042 26.1984 17.296 26.6165 18.036 26.6165H18.1004C18.583 26.6004 19.5965 26.1823 19.5965 26.1663C21.3018 25.4588 24.6641 23.2558 26.0154 21.7926L26.112 21.6961Z" fill="currentColor"/>
+    </symbol>
+</svg>
+    
+    <script>
+        var GradioLocations = [
+            {
+            'markerPoint' : [40.712776, -74.005974],
+                'title': 'Gradio USA',
+                'subtitle': 'Gradio Inc.',
+                'address': '243, Eastern Parkway, Brooklyn, New York, USA'
+            },
+        ];
+    </script>
+    <!-- plugin js -->
+    <script src="assets/js/vendor/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/magnific-popup.min.js"></script>
+    <script src="assets/js/vendor/lazy.image.js"></script>
+    <script src="assets/js/vendor/leaflet.js"></script>
+    <script src="assets/js/vendor/vertical-number-scroll.js"></script>
+    <!-- GSAP library -->
+    <script src="assets/js/vendor/gsap.min.js"></script>
+    <script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+    <script src="assets/js/vendor/script-gsap.js"></script>
+    
+    <script src="assets/js/vendor/wow.min.js"></script>
+    <!-- template js -->
+    <script src="assets/js/script.js"></script>
+    <script src="customize/presets.js"></script>
+</body>
+</html>
