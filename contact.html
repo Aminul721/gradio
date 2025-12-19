@@ -265,28 +265,28 @@
                             <h4 class="mb-12 letter-spacing-n1 text-uppercase">Social media</h4>
                             <p class="mb-12">Connect on social handle</p>
                             <div class="social-link-wrap @@socialClass">
-    <ul class="list-unstyled m-0 d-flex align-items-center gap-2 gap-lg-4">
-        <li><a href="#" class="text-decoration-none" target="_self" aria-label="facebook">
-            <svg width="20" height="20"><use xlink:href="#icon-fabk"></use></svg>
-        </a></li>
-        <li><a href="#" class="text-decoration-none" target="_self" aria-label="x">
-            <svg width="20" height="20"><use xlink:href="#icon-x"></use></svg>
-        </a></li>
-        <li><a href="#" class="text-decoration-none" target="_self" aria-label="instagram">
-            <svg width="20" height="20"><use xlink:href="#icon-inta"></use></svg>
-        </a></li>
-        <li><a href="#" class="text-decoration-none" target="_self" aria-label="thread">
-            <svg width="20" height="20"><use xlink:href="#icon-thrd"></use></svg>
-        </a></li>
-    </ul>
-</div>
+                                <ul class="list-unstyled m-0 d-flex align-items-center gap-2 gap-lg-4">
+                                    <li><a href="#" class="text-decoration-none" target="_self" aria-label="facebook">
+                                        <svg width="20" height="20"><use xlink:href="#icon-fabk"></use></svg>
+                                    </a></li>
+                                    <li><a href="#" class="text-decoration-none" target="_self" aria-label="x">
+                                        <svg width="20" height="20"><use xlink:href="#icon-x"></use></svg>
+                                    </a></li>
+                                    <li><a href="#" class="text-decoration-none" target="_self" aria-label="instagram">
+                                        <svg width="20" height="20"><use xlink:href="#icon-inta"></use></svg>
+                                    </a></li>
+                                    <li><a href="#" class="text-decoration-none" target="_self" aria-label="thread">
+                                        <svg width="20" height="20"><use xlink:href="#icon-thrd"></use></svg>
+                                    </a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-5 col-xl-6 ps-lg-4 ps-xl-45 wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms'>
                 <div class="rounded-4 border px-4 px-lg-32 py-4 py-30">
-                    <form action="#" class="form-style row g-4">
+                    <form action="https://formspree.io/f/mlgrdlkd"  method="POST" id="my-form" class="form-style row g-4">
                         <div class="col-12">
                             <div>
                                 <label for="fullname" class="form-label mb-8">Full Name</label>
@@ -302,13 +302,15 @@
                         <div class="col-12">
                             <div>
                                 <label for="textarea" class="form-label mb-8">Your Opinion</label>
-                                <textarea name="textarea" class="form-control bg-dark-subtle" id="textarea" placeholder="Leave us a message"></textarea>
+                                <textarea name="message" class="form-control bg-dark-subtle" id="textarea" placeholder="Leave us a message"></textarea>
                             </div>
                         </div>
 
                         <div class="col-12 mt-5 mt-lg-40">
-                            <button type="button" class="btn btn-icon btn-primary">Submit <span><svg width="21" height="21"><use xlink:href="#icon-right-arrow"></use></svg></span></button>
+                            <button type="submit" id="my-form-button" class="btn btn-icon btn-primary">Submit <span><svg width="21" height="21"><use xlink:href="#icon-right-arrow"></use></svg></span></button>
                         </div>
+
+                        <p id="my-form-status"></p>
                     </form>
                 </div>
             </div>
@@ -527,7 +529,7 @@
     <symbol id="icon-video-play" viewBox="0 0 40 40" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33203 20.0093C3.33203 10.8101 10.8127 3.33301 19.9987 3.33301C29.1847 3.33301 36.6654 10.8101 36.6654 20.0093C36.6654 29.1893 29.1847 36.6663 19.9987 36.6663C10.8127 36.6663 3.33203 29.1893 3.33203 20.0093ZM26.112 21.6961C26.2889 21.5192 26.5141 21.2459 26.5624 21.1815C26.8198 20.8439 26.9485 20.4258 26.9485 20.0093C26.9485 19.5414 26.8037 19.1072 26.5302 18.7535C26.5078 18.7311 26.4639 18.6833 26.4067 18.6211C26.2997 18.5046 26.1461 18.3374 25.9993 18.1907C24.6802 16.7757 21.2374 14.4602 19.4356 13.7527C19.1621 13.6417 18.4704 13.3989 18.1004 13.3829C17.7464 13.3829 17.4086 13.4633 17.0869 13.6241C16.6847 13.8492 16.3629 14.2029 16.186 14.621C16.0733 14.9104 15.8964 15.7787 15.8964 15.7948C15.7194 16.7435 15.6229 18.2872 15.6229 19.9916C15.6229 21.6173 15.7194 23.095 15.8642 24.0598C15.8682 24.0638 15.882 24.1328 15.9035 24.24C15.9689 24.5659 16.105 25.2448 16.2503 25.5231C16.6042 26.1984 17.296 26.6165 18.036 26.6165H18.1004C18.583 26.6004 19.5965 26.1823 19.5965 26.1663C21.3018 25.4588 24.6641 23.2558 26.0154 21.7926L26.112 21.6961Z" fill="currentColor"/>
     </symbol>
-</svg>
+    </svg>
     
     <script>
         var GradioLocations = [
@@ -553,6 +555,8 @@
     <script src="assets/js/vendor/script-gsap.js"></script>
     
     <script src="assets/js/vendor/wow.min.js"></script>
+
+    <script src="https://formspree.io/js/formbutton-v1.min.js"></script>
     <!-- template js -->
     <script src="assets/js/script.js"></script>
     <script src="customize/presets.js"></script>

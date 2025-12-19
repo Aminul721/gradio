@@ -129,7 +129,7 @@
   }
 
   // ajax form js
-  $(document).on('submit', '#contactForm, #callRequestForm, #downloadForm', function (e) {
+  /*$(document).on('submit', '#contactForm, #callRequestForm, #downloadForm', function (e) {
     e.preventDefault();
     var form = $(this);
     var formData = form.serialize();
@@ -158,7 +158,77 @@
         form.find('[type="submit"]').prop('disabled', false);
       }
     });
+  });*/
+
+  var form = document.getElementById("my-form");
+  
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          }
+        })
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
+
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/mlgrdlkd",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "fullname", 
+        label: "Full Name:", 
+        name: "fullname",
+        required: true,
+        placeholder: "Your Full Name"
+      },
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
   });
+
 
 
   if ($(".wow").length) {
